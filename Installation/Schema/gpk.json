@@ -1,0 +1,30 @@
+{
+  "$id": "https://example.com/gpk.json",
+  "$schema": "https://docs.commongateway.nl/schemas/Entity.schema.json",
+  "version": "0.1",
+  "title": "Example",
+  "type": "object",
+  "description": "GPK Case.",
+  "properties": {
+    "aangever": {
+      "kaarttype": {
+        "type": "string",
+        "description": "Type of the card.",
+        "example": "B",
+        "required": true
+      },
+      "vervaldatum": {
+        "type": "integer",
+        "description": "Expiration date.",
+        "example": 20120413,
+        "required": true
+      },
+      "nummer": {
+        "type": "string",
+        "description": "Number of card.",
+        "example": "12123V1221",
+        "required": true
+      }
+    }
+  }
+}
